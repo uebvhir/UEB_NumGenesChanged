@@ -38,7 +38,7 @@ genesSelectable <- function (topTab, adj0, adj1, adj2, adj3, P1, P2,FC=0)
            upRegAdj0.01 = upBelowAdj0, downRegAdj0.01 = downBelowAdj0,
            upRegAdj0.05 = upBelowAdj1, downRegAdj0.05 = downBelowAdj1,
            upRegAdj0.15 = upBelowAdj2, downRegAdj0.15 = downBelowAdj2,
-           upRegAdj0.25 = upBelowAdj2, downRegAdj0.25 = downBelowAdj2,
+           upRegAdj0.25 = upBelowAdj3, downRegAdj0.25 = downBelowAdj3,
            upRegP0.01 = upBelowP1, downRegP0.01 = downBelowP1,
            upRegP0.05 = upBelowP2, downRegP0.05 = downBelowP2))   
 }
