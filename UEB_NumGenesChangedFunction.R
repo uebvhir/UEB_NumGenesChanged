@@ -7,11 +7,12 @@
 ##### topTab: Toptable en format '.csv'
 ##### adj0: p.valor adjustat pel qual filtrar (de normal, 0.01)
 ##### adj1: segon p.valor adjustat pel qual filtrar (de normal, 0.05)
-##### adj2: tercer p.valor adjustat pel qual filtrar (de normal, 0.25)
+##### adj2: tercer p.valor adjustat pel qual filtrar (de normal, 0.15)
+##### adj3: tercer p.valor adjustat pel qual filtrar (de normal, 0.25)
 ##### P1: p.valor pel qual filtrar (de normal, 0.01)
 ##### P2: segon p.valor pel qual filtrar (de normal, 0.05)
 ################################################################################
-genesSelectable <- function (topTab, adj0, adj1, adj2, adj3, P1, P2,FC=0)
+genesSelectable <- function (topTab, adj0 = 0.01, adj1 = 0.05, adj2 = 0.15, adj3 = 0.25, P1 = 0.01, P2 = 0.05,FC=0)
 {
   upBelowB <- sum(topTab$B > 0  & topTab$t > 0 & abs(topTab$logFC) > FC)
   downBelowB <- sum(topTab$B > 0  & topTab$t < 0 & abs(topTab$logFC) > FC)
